@@ -1,7 +1,11 @@
 
-import { TimerIcon,HouseIcon, TimerResetIcon , SettingsIcon, SunIcon, PlayIcon} from 'lucide-react';
+import { PlayIcon} from 'lucide-react';
 import './App.css'
 import {useState} from 'react';
+import {Logo} from './components/Logo';
+import {Menu} from './components/Menu';
+
+
 
 export function App() {
   
@@ -14,51 +18,8 @@ export function App() {
     <div className="bg-gray-900 text-white min-h-screen flex justify-center items-center flex-col">
       
       <header className=' py-10 justify-center flex flex-col items-center font-bold text-2xl'>
-      <TimerIcon className='text-indigo-400 w-18 h-18'/>
-      <span className='text-4xl py-1 transition hover:scale-105 text-indigo-400
-      font-semibold'>Pomodoro Timer</span>
-      <span className='text-sm text-indigo-300 font-medium'>Gerencie seu foco</span>
-    
-    <div className=' flex flex-row justify-center items-center gap-4  mt-16  '>
-    
-      
-        <button className='px-4 py-2
-  rounded-lg
-  bg-gradient-to-r
-  from-indigo-500
-  via-blue-500
-  to-cyan-500
-  hover:brightness-80
-  ' aria-label='Página Inicial'>
-          <HouseIcon className=' text-gray-900'/>
-        </button>
-      
-
-      <button className='px-4 py-2 rounded-lg bg-gradient-to-r
-  from-indigo-500
-  via-blue-500
-  to-cyan-500
-  hover:brightness-80' aria-label='Histórico'>
-        <TimerResetIcon className=' text-gray-900'/>
-      </button>
-
-      <button className='px-4 py-2 rounded-lg bg-gradient-to-r
-  from-indigo-500
-  via-blue-500
-  to-cyan-500
-  hover:brightness-80' aria-label='Configurações'>
-        <SettingsIcon className=' text-gray-900'/>
-      </button>
-
-      <button className='px-4 py-2 rounded-lg bg-gradient-to-r
-  from-indigo-500
-  via-blue-500
-  to-cyan-500
-  hover:brightness-80' aria-label='Mudar Tema'>
-        <SunIcon className='text-gray-900'/>
-      </button>
-      
-    </div>
+      <Logo/>
+      <Menu/>
     
     </header>
     
