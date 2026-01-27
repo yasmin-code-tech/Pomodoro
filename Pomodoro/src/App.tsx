@@ -1,7 +1,8 @@
 
 import { PlayIcon} from 'lucide-react';
 import './App.css'
-import {useState} from 'react';
+
+//components
 import {Logo} from './components/Logo';
 import {Menu} from './components/Menu';
 import {CountDown} from './components/CountDown';
@@ -27,7 +28,8 @@ export function App() {
 
     <CountDown/>
 
-    <DefaultInput type='text'/>
+    <DefaultInput labelText='Tarefa' id='task' type='text' title='MeuTitulo' placeholder='Digite algo...'
+    />
 
     
 
