@@ -7,6 +7,7 @@ import {Logo} from './components/Logo';
 import {Menu} from './components/Menu';
 import {CountDown} from './components/CountDown';
 import {DefaultInput} from './components/DefaultInput';
+import { Cycles } from './components/Cycles';
 
 
 
@@ -30,18 +31,7 @@ export function App() {
 
     <DefaultInput labelText='Tarefa' id='task' type='text' title='MeuTitulo' placeholder='Digite algo...'
     />
-
-    
-
-    <div>
-      <span>Ciclos:</span>
-    </div>
-
-    <div className='mt-4'>
-      <button className="bg-blue-500 py-2 px-20 rounded-xl hover:brightness-90">
-        <PlayIcon className='w-10 h-10 text-gray-900 border-3 rounded-full py-2'/>
-      </button>
-    </div>
+    <Cycles/>
     
 
     </div>
