@@ -4,12 +4,13 @@ import './App.css'
 import {useState} from 'react';
 import {Logo} from './components/Logo';
 import {Menu} from './components/Menu';
+import {CountDown} from './components/CountDown';
+import {DefaultInput} from './components/DefaultInput';
 
 
 
 export function App() {
-  
-    const [task, setTask] = useState<string>('');
+
 
   
   
@@ -24,29 +25,11 @@ export function App() {
     </header>
     
 
-    <div>
-      espaço para o timer
-    </div>
+    <CountDown/>
 
-    <div className="m-10 p-5 flex flex-col items-center">
-      <span className='mb-2'>task:</span>
-      <input type="text"
-      value={task}
-      onChange={(e)=> setTask(e.target.value)} 
-      className='border-b
-      border-indigo-400
-      px-3
-      py-2
-      focus:ring-2
-      focus:ring-indigo-600
-      hover:border border-indigo-400 rounded-md 
-      text-2xl'/>
+    <DefaultInput type='text'/>
 
-      <span className='m-8'>Nesse ciclo <span className='font-semibold'>descanse</span> por <span className='font-bold'>5 minutos</span>
-      
-      </span>
-      
-    </div>
+    
 
     <div>
       <span>Ciclos:</span>
