@@ -1,5 +1,4 @@
-
-import { PlayIcon} from 'lucide-react';
+//styles
 import './App.css'
 
 //components
@@ -8,6 +7,10 @@ import {Menu} from './components/Menu';
 import {CountDown} from './components/CountDown';
 import {DefaultInput} from './components/DefaultInput';
 import { Cycles } from './components/Cycles';
+import { DefaultButton } from './components/DefaultButton';
+
+//icons
+import {PlayCircleIcon} from 'lucide-react';
 
 
 
@@ -32,6 +35,7 @@ export function App() {
     <DefaultInput labelText='Tarefa' id='task' type='text' title='MeuTitulo' placeholder='Digite algo...'
     />
     <Cycles/>
+    <DefaultButton icon={<PlayCircleIcon/>}/>
     
 
     </div>
