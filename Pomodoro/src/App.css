@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    --background: #111827;
+    --foreground: #ffffff;
+}
+
+@theme{
+    --animate-marquee: marquee 25s linear infinite;
+
+    @keyframes marquee {
+        from{
+            transform: translateX(-100%);
+
+        }to{
+            transform: translateX(100%);
+        }
+    }
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+}

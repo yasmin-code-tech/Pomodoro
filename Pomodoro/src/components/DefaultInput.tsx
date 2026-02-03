@@ -19,7 +19,7 @@ export function DefaultInput({ id, type, labelText, ...rest }: DefaultInputProps
        className='w-full
          border-0
          border-b-2
-         border-transparent
+         border-indigo-500
          bg-transparent
          focus:outline-none
          focus:border-indigo-500
