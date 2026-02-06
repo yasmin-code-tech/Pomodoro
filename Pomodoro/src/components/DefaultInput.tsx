@@ -10,7 +10,7 @@ type DefaultInputProps  =
 export function DefaultInput({ id, type, labelText, ...rest }: DefaultInputProps){
  return(
     <>
-    <div className='flex flex-col justify-center items-center mt-6'>
+    <div className='flex flex-col justify-center items-center py-6 text-background dark:text-foreground'>
        {
         labelText && <label htmlFor={id} className='text-[16px]'>{labelText}</label>
        }
@@ -31,6 +31,8 @@ export function DefaultInput({ id, type, labelText, ...rest }: DefaultInputProps
          justify-center
          italic
          text-center
+         text-background
+         dark:text-foreground
          '/>
     </div>
     </>

@@ -18,7 +18,7 @@ export function DefaultButton({ icon, variant='blue', className='', ...props }: 
 
     return(
     <>
-    <div className='mt-16'>
+    <div className='py-8'>
        <button  {...props}
        className={`${baseClasses} ${variantClasses[variant] } ${className}`}>
         {icon}
